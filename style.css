@@ -1,0 +1,557 @@
+/* Style Umum */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+body {
+    word-wrap: break-word !important;
+    font-family: sans-serif, 'Open Sans';
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* padding: 0; */
+    /* margin: 0; */
+    width: 100%;
+    height: 70px;
+    background-color: #4775e0;
+}
+
+#logo {
+    /* position: relative; */
+    width: 60px;
+    height: 58px;
+    /* max-width: 50px; */
+    /* color: white; */
+    display: block;
+    /* padding: 2px;
+    padding-left: 5px; */
+    /* float: left; */
+    /* line-height: 5px; */
+    border-radius: 10px;
+}
+
+.content {
+    /* float: left; */
+    /* margin-top: 10%; */
+    width: 100%;
+    height: 1000px;
+    /* clear: both; */
+    /* position: relative; */
+    /* overflow: auto; */
+    /* margin: auto; */
+    margin-top: 80px;
+    /* padding-top: 80px; */
+    /* padding: 1%; */
+    /* background-color: white; */
+    text-align: center;
+    background-image: url(../image/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    background-attachment: fixed;
+    /* background-position-x: 100px; */
+    background-position-y: 100px;
+    background-position-x: auto;
+}
+
+.content form .fieldset-report {
+    max-width: 30%;
+    /* margin: auto; */
+    /* min-width: 30%; */
+    /* margin-top: 1%; */
+    /* position: static; */
+}
+
+
+/*untuk di chart page */
+
+#myChart {
+    font-weight: bold;
+    margin-top: 100px;
+    display: block;
+    width: 900px;
+    /* margin: auto; */
+    /* width: 500px; */
+    /* height: 300px; */
+    /* width: 600px; */
+    /* margin: auto; */
+    background-color: #fffffff6;
+    /* font-size: 12px; */
+}
+
+
+/* 
+canvas {
+    /* width: 100%; */
+
+
+/* }
+*/
+
+
+/* End Style Umum */
+
+
+/* ========================================================================== */
+
+
+/* Style Login */
+
+.div_login {
+    min-width: 20%;
+    max-width: 20%;
+    background-color: #ffffffbc;
+    margin: 15% auto;
+    padding: 2% 3%;
+    box-shadow: 0px 0px 100px 1px #0030ff;
+    border: 3px solid #001c97;
+    border-radius: 30px 1px;
+}
+
+legend {
+    text-align: center;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+.login_form {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2%;
+    font-size: 11pt;
+    margin-bottom: 2%;
+}
+
+.login_submit {
+    background-color: blue;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 11pt;
+    width: 100%;
+    border-radius: 7px;
+    padding: 1% 2%;
+    margin-top: 2%;
+}
+
+.alert {
+    background-color: #e44e4e;
+    color: white;
+    padding: 2%;
+    text-align: center;
+    border: 1px solid #b32929;
+}
+
+
+/* End Style Login */
+
+
+/* ====================================================================== */
+
+.labelNip {
+    float: right;
+    color: white;
+    position: relative;
+    top: -9px;
+    right: 15px;
+    font-size: 14px;
+}
+
+
+/* Style Admin */
+
+a {
+    color: #ffffff;
+}
+
+.toogle,
+[id^=drop] {
+    display: none;
+    /* background-color: black; */
+}
+
+.toogle {
+    max-height: 67px;
+}
+
+.nav-bar {
+    position: fixed;
+    left: 0;
+    top: 58px;
+    width: 100%;
+    /* clear: both; */
+    height: 32px;
+    margin-bottom: 10%;
+    /* overflow: hidden;     */
+    /* margin: 0; */
+    /* margin-top: ; */
+    /* padding: 5px; */
+    background-color: #1900ff;
+    box-shadow: 5px 15px 9px 0px rgba(0, 0, 0, 0.65);
+}
+
+.nav-bar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav-bar ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+.toogle:after {
+    background-color: #4475e0;
+}
+
+.toogle:hover {
+    background-color: black;
+}
+
+.nav-bar ul li {
+    margin: 0px;
+    display: inline-block;
+    /* float: left; */
+    /* border: 0.5px solid blue; */
+    background-color: #1900ff;
+}
+
+
+/* .nav-bar ul li:hover {
+    background-color: black;
+    max-height: fit-content;
+} */
+
+.nav-bar a {
+    display: block;
+    padding: 9px 15px;
+    color: #ffffff;
+    font-size: 12px;
+    /* border-right: 1px solid rgba(0, 0, 0, 0.65); */
+    text-decoration: none;
+}
+
+.nav-bar ul li ul li a:hover {
+    background-color: #4775e0;
+}
+
+.nav-bar ul li ul li {
+    background-color: #1900ff;
+}
+
+.nav-bar a:hover {
+    background-color: #4775e0;
+}
+
+.nav-bar ul ul {
+    display: none;
+    position: absolute;
+    top: 32px;
+    box-shadow: 5px 15px 9px 0px rgba(0, 0, 0, 0.65);
+}
+
+.nav-bar ul li:hover>ul {
+    display: inherit;
+}
+
+.nav-bar ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+.nav-bar ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+li>a:after {
+    content: ' +';
+}
+
+li>a:only-child:after {
+    content: '';
+}
+
+table {
+    background-color: white;
+}
+
+
+/* media output disini -------------------------------------- */
+
+@media all and (max-width: 760px) {
+    .content {
+        font-size: 12px;
+        /* float: left; */
+        /* margin-top: 10%; */
+        /* width: 99%; */
+        /* height: 1870px; */
+        /* clear: both; */
+        /* position: relative; */
+        /* overflow: auto; */
+        /* margin: auto; */
+        /* padding-top: 5%; */
+        /* padding: 1%; */
+        /* background-color: white; */
+        /* text-align: center;
+        background-image: url(../image/bg.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed; */
+    }
+    .header {
+        height: 40px;
+    }
+    #logo {
+        width: 40px;
+        height: 40px;
+    }
+    .nav-bar {
+        top: 40px;
+    }
+    /* .fieldset-report {
+        margin-top: 10%;
+    } */
+    .content form .fieldset-report {
+        /* font-size: 8px; */
+        max-width: 40%;
+        /* margin: auto; */
+        /* min-width: 30%; */
+        /* margin-top: 1%; */
+        /* position: static; */
+    }
+    .div_login {
+        min-width: 60%;
+        /* background-color: #ffffff; */
+        margin: 5% auto;
+        padding: 2% 3%;
+        box-shadow: 0px 0px 100px 1px #0030ff;
+        border: 3px solid #001c97;
+        border-radius: 30px 1px;
+    }
+    /* table tr th {
+        font-size: 11px;
+    } */
+    /* fieldset {
+        min-width: 40%;
+        margin-top: 5%;
+    } */
+    .labelNip {
+        float: right;
+        color: white;
+        position: relative;
+        top: -9px;
+        right: 15px;
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 300px) {
+    .nav-bar {
+        margin: 0;
+    }
+    .toogle+a,
+    .menu {
+        font-size: 12px;
+        display: none;
+        /* height: 10%; */
+        box-shadow: 5px 15px 9px 0px rgba(0, 0, 0, 0.65);
+    }
+    .toogle {
+        display: block;
+        font-weight: normal;
+        width: 95   px;
+        height: 30%;
+        background-color: #1900ff;
+        padding: 11px 16px;
+        color: #ffffff;
+        font-size: 12px;
+        text-decoration: none;
+        border: none;
+    }
+    .toogle:hover {
+        /* height: 12%; */
+        background-color: #4775e0;
+    }
+    [id^=drop]:checked+ul {
+        display: block;
+    }
+    .nav-bar ul li {
+        display: block;
+        width: 100%;
+        height: 10%;
+    }
+    .nav-bar ul li a:hover {
+        width: 77%;
+    }
+    .nav-bar ul ul .toogle,
+    .nav-bar ul ul a {
+        padding: 0 40px;
+    }
+    .nav-bar ul ul ul a {
+        padding: 0 80px;
+    }
+    .nav-bar a:hover,
+    .nav-bar ul ul ul a {
+        /* background-color: #708bff; */
+        width: 60%;
+    }
+    .nav-bar ul li ul li .toogle,
+    .nav-bar ul ul a,
+    .nav-bar ul ul ul a {
+        padding: 14px 20px;
+        color: white;
+        font-size: 12px;
+        /* width: 70%; */
+    }
+    .nav-bar ul li ul li .toogle,
+    .nav-bar ul ul a {
+        background-color: #708bff;
+        width: 69.5%;
+    }
+    .nav-bar ul ul {
+        float: none;
+        position: static;
+        color: white;
+    }
+    .nav-bar ul li ul li a:hover {
+        width: 70%;
+    }
+    .nav-bar ul ul li:hover>ul,
+    .nav-bar ul li:hover>ul {
+        /* Di cek ==================================== */
+        display: inherit;
+    }
+    .nav-bar ul ul li {
+        display: block;
+        width: 100%;
+    }
+    .nav-bar ul ul ul li {
+        position: static;
+    }
+    .content form .fieldset-report {
+        /* font-size: 8px; */
+        max-width: 95%;
+        /* margin: auto; */
+        /* min-width: 30%; */
+        /* margin-top: 1%; */
+        /* position: static; */
+    }
+    .nav-bar ul li {
+        display: block;
+        width: 100%;
+    }
+    .div_login {
+        clear: both;
+        width: 40%;
+        margin: 15% auto;
+        padding: 2% 3%;
+        box-shadow: 0px 0px 100px 1px #0030ff;
+        border: 3px solid #001c97;
+        border-radius: 30px 1px;
+    }
+    .content {
+        width: 100%;
+        background-position-y: 60px;
+    }
+    /* fieldset {
+        clear: both;
+        width: 90%;
+        margin: 2% auto;
+    } */
+    /* td {
+        float: left;
+    } */
+    myChart {
+        width: 300px;
+        height: 500px;
+    }
+    table {
+        width: 100%
+    }
+    /* .labelNip {
+        float: right;
+        color: white;
+        position: relative;
+        top: -9px;
+        right: 15px;
+        font-size: 14px;
+    } */
+}
+
+
+/*  */
+
+
+/* End Media==----------------------------------------------- */
+
+
+/* Tombol Export di laporan */
+
+.tombol_export {
+    display: block;
+    font-size: 13px;
+    /* font-weight: bolder; */
+    color: black;
+    background-color: #c3d4fb;
+    padding-top: 7px;
+    margin-bottom: 6px;
+    text-decoration: none;
+    width: 120px;
+    height: 24px;
+    border: 1px solid #0030ff;
+    border-radius: 20px;
+    /* position: absolute;
+    top: 15%;
+    right: 1%; */
+    box-shadow: 2px 5px 10px 5px #00000077;
+}
+
+.tombol_export:hover {
+    width: 170px;
+}
+
+
+/* UNTUK TAMBAH DATA GK DI PAKE */
+
+
+/* .content #aa {
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    overflow: hidden;
+    clear: both;
+    z-index: 1;
+    display: block;
+    margin-top: 2%;
+    padding: 1%;
+    background-color: #c3d4fbd5;
+    border: 2px solid black;
+    border-radius: 0px 30px 30px 0px;
+}
+
+#aa table {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 14px;
+} */
+
+
+/* table {
+    background-color: rgba(255, 255, 255, 0.65);
+    text-align: center;
+    font-size: 9px; 
+    width: 100%;
+     Tabel di perbaiki 
+} */

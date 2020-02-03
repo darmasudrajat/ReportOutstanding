@@ -1,0 +1,7 @@
+SELECT     MONTH(SuratJalan_HD.tgl_SJ) AS Bulan, SUM(SuratJalan_Dtl.QtyKirim * ApproveMKT.HargaPerPcs) AS Total, YEAR(SuratJalan_HD.tgl_SJ) AS Tahun
+into tb_chart1 FROM         SuratJalan_HD INNER JOIN
+                      SuratJalan_Dtl ON SuratJalan_HD.No_SJ = SuratJalan_Dtl.No_SJ INNER JOIN
+                      SPK ON SuratJalan_Dtl.No_SPK = SPK.No_SPK INNER JOIN
+                      ApproveMKT ON SPK.NO_Order = ApproveMKT.NO_Order
+GROUP BY MONTH(SuratJalan_HD.tgl_SJ), YEAR(SuratJalan_HD.tgl_SJ)
+HAVING      (YEAR(SuratJalan_HD.tgl_SJ) = YEAR(GETDATE()))

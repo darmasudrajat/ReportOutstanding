@@ -1,0 +1,6 @@
+SELECT     MONTH(SuratJalan_HD.tgl_SJ) AS bulan, SUM(SuratJalan_Dtl.QtyKirim) AS total, YEAR(SuratJalan_HD.tgl_SJ) AS Expr2
+into tb_chart FROM         SuratJalan_HD INNER JOIN
+                      SuratJalan_Dtl ON SuratJalan_HD.No_SJ = SuratJalan_Dtl.No_SJ
+GROUP BY MONTH(SuratJalan_HD.tgl_SJ), YEAR(SuratJalan_HD.tgl_SJ)
+HAVING      (YEAR(SuratJalan_HD.tgl_SJ) = YEAR(GETDATE()))
+ORDER BY MONTH(SuratJalan_HD.tgl_SJ)
